@@ -1,0 +1,146 @@
+.section-1{
+    width: 79.322vw;
+    height: 100vh;
+    margin-left: 8.041vw;
+    margin-top: 6.203vw;
+    display: flex;
+}
+.body-section{
+    width: 61.516vw;
+    height: inherit;
+}
+.top-section{
+    width: 100%;
+    background-color: #459E97;
+    border-top-left-radius: 1.149vw;
+    border-top-right-radius: 1.149vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.527vw 2.872vw;
+}
+.data h4{
+    font-size: 1.608vw;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    font-family: 'DM Sans';
+}
+.data h6{
+    font-size: 1.149vw;
+    font-weight: 400;
+    margin:0.574vw 0 0;
+    color: white;
+    font-family: 'DM Sans';
+}
+.circle{
+    color: white;
+    width: 1.921vw;
+    height: 1.921vw;
+}
+.reload-text{
+    font-size: 0.862vw;
+    font-weight: 400;
+    margin:0.574vw 0 0;
+    color: white;
+    font-family: 'DM Sans';
+}
+.questionMark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center-section{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+img{
+    width: inherit;
+    height: inherit;
+}
+/*grid layout*/
+.boxes {
+    width: 15vw;
+    padding: 0.574vw;
+    margin-bottom: 1.149vw;
+    break-inside: avoid-column;
+    border-radius: 0.287vw;
+  }
+  .boxes:nth-child(2n) {
+    height:8.326vw;
+  }
+  .boxes:nth-child(3n) {
+    height:8.326vw;
+  }
+  .boxes:nth-child(4n) {
+    height: 19.302vw;
+  }
+  .boxes:nth-child(5n) {
+    height: 9.895vw;
+  }
+  .boxes:nth-child(6n) {
+    height: 16.786vw;
+  }
+  .boxes:nth-child(7n) {
+    height: 9.895vw;
+  }
+  .boxes:nth-child(8n) {
+    height: 19.302vw;
+  }
+  .boxes:nth-child(9n) {
+    height: 16.786vw;
+    background-color: red;
+    border-radius: 1.149vw;
+  }
+  .nested h4{
+    font-size: 1.723vw;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  .nested button{
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1.379vw;
+    font-weight: 600;
+    border-radius: 1.149vw;
+    padding: 0.574vw 1.149vw;
+    width: fit-content;
+    margin: auto;
+  }
+  .boxes-con {
+    column-count: 3;
+    column-gap: 1.149vw;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    padding: 1.149vw;
+    width: 56vw;
+    height: auto;
+  }
+
+  /*for tablet*/
+@media  (max-width: 1024px) {
+   .section-1{
+    display: block;
+   }
+   .body-section{
+    margin: auto;
+    width: 50%;
+   }
+   .boxes-con {
+    column-count: 2;
+    }
+    .boxes {
+        width: 20vw;
+    }
+}
+/*for mobile*/
+@media (max-width: 480px) {
+    .boxes-con {
+        column-count: 1;
+        }
+        .boxes {
+            width: 30vw;
+        }
+}

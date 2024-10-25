@@ -1,0 +1,222 @@
+.sidebar {
+    width: 17.806vw;
+    height: inherit;
+    margin-top: 2.872vw;
+    border-top-left-radius: 0.574vw;
+    border-bottom-left-radius: 0.574vw;
+    box-shadow: 0px 4px 23.1px 0px #00000012;
+}
+
+.sec-1 {
+    display: flex;
+    margin-right: 0.804vw;
+    margin-top: 1.091vw;
+    gap: 0 0.5vw;
+    align-items: center;
+    justify-content: end;
+}
+
+.sec-1 img {
+    width: 1.034vw;
+    height: 1.034vw;
+}
+
+.sec-1 p {
+    font-family: 'DM Sans';
+    font-size: 0.574vw;
+    font-weight: 500;
+    color: #003F52;
+    padding: 0.23vw 0.804vw;
+    background-color: #EFFBFF;
+    border-radius: 1.149vw;
+    width: fit-content;
+}
+
+.logo {
+    width: 11.775vw;
+    margin: 0.861vw auto 0;
+}
+
+.logo img {
+    width: inherit;
+    aspect-ratio: 0;
+}
+
+.sec-2 {
+    display: flex;
+    padding: 15px 10px;
+}
+
+.sec-2:hover {
+    background-color: #024154;
+}
+
+.icon-div {
+    width: 1.091vw;
+    height: 1.091vw;
+}
+
+.sec-2:hover .icon-div {
+    filter: brightness(0) invert(1);
+}
+
+.sec-2:hover .data-div p {
+    color: white;
+}
+
+.sec-2:hover .heading-div h4 {
+    color: white;
+}
+
+.heading-div {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.heading-div h4 {
+    font-family: 'Nunito';
+    font-size: 1.034vw;
+    font-weight: 500;
+    color: #003F52;
+    margin: 0;
+}
+
+.dropdown-item {
+    padding: 0.23vw 0.804vw;
+    background-color: #EFFBFF;
+    border-radius: 1.149vw;
+
+}
+
+.dropdown-icon {
+    width: 0.517vw;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    gap: 0 0.574vw;
+    justify-content: flex-end;
+}
+
+.options-list {
+    margin-top: 0.574vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0.574vw;
+    gap: 5px;
+}
+
+.single-option {
+    width: fit-content;
+    font-size: 0.517vw;
+    font-weight: 900;
+    margin: 0;
+    color: #013D4E;
+
+}
+
+.profile-info {
+    width: 85%;
+    margin: 3.446vw auto 0;
+    height: fit-content;
+    background-color: #459E97;
+    position: relative;
+    border-radius: 0.574vw;
+    border: 3px solid rgba(5, 89, 114, 0.19);
+}
+
+.profile-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -2.5vw;
+    width: 4.652vw;
+    height: 4.652vw;
+}
+
+.about-profile {
+    padding-top: 2.872vw;
+    padding-bottom: 1.493vw;
+}
+
+.about-profile h4 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.034vw;
+    font-weight: 700;
+    color: white;
+}
+
+.about-profile h5 {
+    width: fit-content;
+    margin: 0.75vw auto;
+    font-size: 0.804vw;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.about-profile h6 {
+    width: fit-content;
+    margin: 0.75vw auto;
+    font-size: 0.747vw;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.574vw 1.149vw;
+    border-radius: 1.149vw;
+    color: white;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.google-review {
+    width: 85%;
+    margin: 0.75vw auto 0;
+}
+
+.google-review img {
+    width: 100%;
+    height: fit-content;
+}
+
+.google-review p {
+    font-size: 0.632vw;
+    font-weight: 400;
+    color: #003F52;
+    margin: 0.574vw auto 0;
+    width: fit-content;
+}
+
+.data-div {
+    margin-left: 0.574vw;
+    width: 100%;
+}
+
+.data-div p {
+    font-size: 0.632vw;
+    font-weight: 400;
+    color: #003F52;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 1024px) {
+    .section-1 {
+        display: block;
+    }
+
+    .sidebar {
+        margin: auto;
+        width: 50%;
+        background-color: yellow;
+    }
+}
+
+/* @media (max-width: 480px) {
+    h1 {
+        color: red;
+    }
+} */
