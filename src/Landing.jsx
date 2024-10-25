@@ -1,6 +1,6 @@
 import React from "react";
 import { CiCircleQuestion } from "react-icons/ci";
-import "./landing.css";
+import "./styles/landing.css";
 import Navbar from "./compoents/navbar";
 
 function Landing() {

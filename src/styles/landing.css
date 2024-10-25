@@ -108,6 +108,7 @@ img{
     padding: 0.574vw 1.149vw;
     width: fit-content;
     margin: auto;
+    display: flex;
   }
   .boxes-con {
     column-count: 3;
