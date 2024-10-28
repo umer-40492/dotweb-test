@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp, FaPhone } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import '../styles/navbar.css'
 const sidebatrdata = [
     {
@@ -18,13 +19,13 @@ const sidebatrdata = [
       imgSrc: "/assets/images/clipboard-check.svg",
       title: "Checklisten",
       des: "Praktische Checklisten für jeden Schritt.",
-      options: ["PDF", "OP"],
+      options: ["PDF", "Aufbereitung der Immobilie","Den richtigen Bewirtschafter finden" ,"Erbschaft einer Immobilie"],
     },
     {
       imgSrc: "/assets/images/ecology-book.svg",
       title: "Ratgeber",
       des: "Immobilien-Expertenrat für Eigentümer.",
-      options: ["PDF", "LOP"],
+      options: ["PDF", "Aufbereitung der Immobilie","Den richtigen Bewirtschafter finden" ,"Erbschaft einer Immobilie"],
     },
     {
       imgSrc: "/assets/images/compass.svg",
@@ -59,6 +60,7 @@ function Navbar() {
             <div className="logo">
               <img src="/assets/images/nav-logo.svg" alt="logo" height={100} />
             </div>
+            <div className='scroll-box'>
             {sidebatrdata.map((data, i) => (
               <div className="sec-2">
                 <img
@@ -89,20 +91,21 @@ function Navbar() {
                         <div className="single-option">{data.options[0]}</div>
                       )}
                     </div>
+                  </div>
+                  <p className='descp'>{data.des}</p>
                     {openDropdown === i && (
                       <div className="options-list">
                         {data.options.map((option, i) => (
-                          <p className="single-option" key={i}>
+                          <p  key={i}>
                             {option}
                           </p>
                         ))}
                       </div>
                     )}
-                  </div>
-                  <p>{data.des}</p>
                 </div>
               </div>
             ))}
+            </div>
             <div className="profile-info">
               <img
                 className="profile-img"
@@ -112,12 +115,17 @@ function Navbar() {
                 height={100}
               />
               <div className="about-profile">
-                <h4>Immotrust AG </h4>
-                <h5>
-                  Vertrauensvolle <br />
-                  Immobilienberatung seit 2008.
+                <h4>Carlos Kuk</h4>
+                <div className='contact-detail'>
+                <FaPhone className='phone' /> 
+                <h5>+43 (650) 234-8156
                 </h5>
-                <h6>Carlos Kuk - Eigentümer</h6>
+                </div>
+                <div className='contact-detail'>
+                <MdEmail className='email' />
+                <h5>carlos@immotrustag.ch
+                </h5>
+                </div>
               </div>
             </div>
             <div className="google-review">

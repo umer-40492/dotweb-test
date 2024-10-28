@@ -23,7 +23,7 @@ function Landing() {
             </div>
           </div>
           <div className="center-section">
-            <div class="boxes-con">
+            {/* <div class="boxes-con">
               <div class="boxes">
                 <img
                   src="/assets/images/Block 1.png"
@@ -93,8 +93,21 @@ function Landing() {
                 <h4>Insert Random Video</h4>
                 <button>Nesting</button>
               </div>
-            </div>
+            </div> */}
+           <div>
+           <h2 className="center-text">
+            Preisschätzung
+            </h2>
+            <h2 className="center-text">
+            🏗️🚧👷
+            </h2>
+           </div>
           </div>
+            <footer>
+                <h5>Bereitgestellt von</h5>
+                <img src="/assets/images/footer_logo.svg" alt="footer logo" width={100} height={100} />
+
+            </footer>
         </div>
       </div>
     </div>

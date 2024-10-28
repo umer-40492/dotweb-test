@@ -1,13 +1,15 @@
 .section-1{
     width: 79.322vw;
-    height: 100vh;
+    height: fit-content;
     margin-left: 8.041vw;
-    margin-top: 6.203vw;
+    margin-top: 3.203vw;
     display: flex;
+    position: relative;
 }
 .body-section{
     width: 61.516vw;
-    height: inherit;
+    position: relative;
+    /* height: fit-content; */
 }
 .top-section{
     width: 100%;
@@ -16,7 +18,7 @@
     border-top-right-radius: 1.149vw;
     display: flex;
     justify-content: space-between;
-    padding: 2.527vw 2.872vw;
+    padding: 1.5vw 2.872vw;
 }
 .data h4{
     font-size: 1.608vw;
@@ -51,8 +53,11 @@
 }
 .center-section{
     width: 80%;
-    height: fit-content;
+    height: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 img{
     width: inherit;
@@ -119,6 +124,39 @@ img{
     width: 56vw;
     height: auto;
   }
+  .center-text{
+    font-size: 1.723vw;
+    font-weight: 700;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+  }
+
+  /**Footer*/
+footer{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.75vw;
+}
+footer h5{
+  font-family: "Inter";
+  font-size: 0.574vw;
+  font-weight: 400;
+  text-align: center;
+  color: #2B606F66;
+}
+footer img{
+  width: 7.352vw;
+  height: 2.183vw;
+}
 
   /*for tablet*/
 @media  (max-width: 1024px) {
